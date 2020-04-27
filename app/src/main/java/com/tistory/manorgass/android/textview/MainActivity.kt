@@ -20,8 +20,12 @@ class MainActivity : AppCompatActivity() {
 
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
                 textView.text = p0.toString()
+                textView1.text = p0.toString()
             }
         }
         editText.addTextChangedListener(watcher)
+        editText.inputType = 0
+
+        textView1.isSelected = true
     }
 }
